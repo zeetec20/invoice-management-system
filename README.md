@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Invoice Hub
+
+<div align="center">
+<img src="https://invoiceshub.vercel.app/mockup.jpeg" style="border-radius: 10px;">
+</div>
+
+## Description
+
+A invoice hub, platform for manage invoices
+
+## Features
+
+- **Next.js 15**: Utilizing the latest features including App Router and Server Components
+- **TypeScript**: Full type safety across the entire application
+- **Material UI**: Modern react component for building ui
+- **React Hook Form**: Library for form handling in react using hooks
+- **Zod**: Library for validating data structures with strong type
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- node.js (v20.10.0 or higher)
+- npm (v10.2.3 or higher)
+- git
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone https://github.com/zeetec20/invoice-management-system.git
+cd invoice-management-system
+```
 
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── public
+└── src
+    ├── app
+    │   └── invoices
+    │       ├── add
+    │       └── list
+    ├── components
+    ├── constants
+    ├── hooks
+    ├── lib
+    │   ├── schema
+    │   └── types
+    └── utils
+```
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Run development server
+- `npm run build` - Build production bundle
+- `npm start` - Start production server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Create a Pull Request
