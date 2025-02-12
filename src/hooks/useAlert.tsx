@@ -27,7 +27,13 @@ export const useAlert = () => {
 
   const AlertContainer = () => {
     return alerts.map((alert, index) => (
-      <AlertComponentAutoDisappear {...alert} key={index} />
+      <AlertComponentAutoDisappear
+        {...alert}
+        key={index}
+        sx={index === alerts.length - 1 ? {
+          marginBottom: '20px',
+        } : {}}
+      />
     ))
   }
 

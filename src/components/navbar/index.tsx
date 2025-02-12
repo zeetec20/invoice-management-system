@@ -83,7 +83,6 @@ export const NavbarComponent = ({ isMobile }: INavbarComponent) => {
           <Box marginLeft="16px">
             <IconButton
               aria-label="notification"
-              onClick={toggleOpen}
               sx={{
                 backgroundColor: '#f1f4f9',
                 border: '1px solid #E2E8F0',
@@ -102,7 +101,6 @@ export const NavbarComponent = ({ isMobile }: INavbarComponent) => {
             <Badge color="error" variant="dot" invisible={false}>
               <IconButton
                 aria-label="message"
-                onClick={toggleOpen}
                 sx={{
                   backgroundColor: '#f1f4f9',
                   border: '1px solid #E2E8F0',
